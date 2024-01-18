@@ -13,7 +13,7 @@
 \geometry{a4paper, margin=1in}
 
 % Document metadata
-\title{Software Requirements Specification (SRS)}
+\title{Software Requirements Specification (SRS)\\[1ex]\large for 'Dil Mange More' Food Delivery Web App}
 \author{Your Team Name}
 \date{\today}
 
@@ -26,70 +26,70 @@
 \tableofcontents
 \newpage
 
-% Introduction section
+% 1 Introduction section
 \section{Introduction}
 \subsection{Purpose}
-% The purpose of this SRS and its intended audience.
+The purpose of this Software Requirements Specification (SRS) is to provide a comprehensive guide for the development of the 'Dil Mange More' food delivery web application using the MERN stack. It outlines the functional and non-functional requirements, design constraints, and other essential aspects to ensure a systematic and successful development process.
 
 \subsection{Document Conventions}
-% Any standards or typographical conventions followed.
+Coding standards follow industry best practices, including the Airbnb JavaScript Style Guide for React.js components, ES6 syntax, and consistent naming conventions. In-code documentation is facilitated through the use of JSDoc for enhanced clarity and maintainability.
 
 \subsection{Intended Audience and Reading Suggestions}
-% Different types of readers that the document is intended for.
+This document is intended for a diverse audience, including developers, testers, project managers, and stakeholders involved in the 'Dil Mange More' project. Developers can refer to the technical specifications, project managers can focus on the project scope, milestones, and potential challenges, while stakeholders can gain insights into the technical intricacies of the application.
 
 \subsection{Project Scope}
-% A short description of the software being specified and its target users.
+The project scope encompasses the development of a user-friendly food delivery web application, 'Dil Mange More,' utilizing the MERN stack. Key components include a responsive React.js frontend, a scalable Node.js and Express.js backend, and MongoDB for efficient data storage. The scope also includes secure user authentication, real-time order processing, and integration with external payment gateways.
 
 \subsection{References}
-% A complete list of all documents referenced elsewhere in the SRS.
+Refer to MongoDB Documentation \cite{mongodb-doc}, Express.js Documentation \cite{express-doc}, React.js Documentation \cite{react-doc}, and Node.js Documentation \cite{node-doc}.
 
 % Overall Description section
 \newpage
 \section{Overall Description}
 \subsection{Product Perspective}
-% The context and origin of the product being specified.
+The 'Dil Mange More' web app is a standalone system that interfaces with external payment gateways and utilizes external APIs for location and order tracking.
 
 \subsection{Product Functions}
-% The major functions the product must perform or must let the user perform.
+Major functions include user registration, food browsing, order placement, real-time order tracking, and payment processing.
 
 \subsection{User Classes and Characteristics}
-% The different types of users who will use this product.
+User classes include customers, administrators, and delivery personnel, each with distinct roles and permissions.
 
 \subsection{Operating Environment}
-% The environment in which the software will operate.
+The software will operate in a web browser environment and is compatible with major browsers (Chrome, Firefox, Safari).
 
 \subsection{Design and Implementation Constraints}
-% Any items or issues that will limit the options available to the developers.
+Coding standards and compatibility with the MERN stack limit development options.
 
 \subsection{User Documentation}
-% The user documentation components that will be provided.
+User documentation will include guides for registration, ordering, and tracking.
 
 \subsection{Assumptions and Dependencies}
-% Any assumed factors that could affect the requirements stated in the SRS.
+Assumptions include a stable internet connection for real-time tracking. Dependencies include external APIs for location services.
 
 % External Interface Requirements section
 \newpage
 \section{External Interface Requirements}
 \subsection{User Interfaces}
-% The logical characteristics of each interface between the software product and its users.
+Logical characteristics of the user interface ensure an intuitive and responsive design.
 
 \subsection{Hardware Interfaces}
-% The logical and physical characteristics of each interface between the software and the hardware components of the system.
+The software interfaces with standard hardware components, relying on user devices for access.
 
 \subsection{Software Interfaces}
-% The connections between this software and other specific software components.
+The web app interfaces with external payment gateways and location APIs.
 
 \subsection{Communications Interfaces}
-% The requirements associated with any communications functions required by this product.
+Requirements include secure communication protocols for payment processing.
 
 % System Features section
 \newpage
 \section{System Features}
-\subsection{System Feature 1}
-% A critical system feature.
+\subsection{System Feature 1: User Authentication}
+Secure user authentication using JWT for enhanced data privacy.
 
-\subsection{System Feature 2}
-% Another critical system feature.
+\subsection{System Feature 2: Real-time Order Processing}
+Implementation of a real-time order processing system using WebSocket for instant updates.
 
 % Repeat subsections as necessary for additional system features.
 
@@ -97,27 +97,47 @@
 \newpage
 \section{Nonfunctional Requirements}
 \subsection{Performance Requirements}
-% The quantitative attributes of the system such as response time, throughput, etc.
+Quantitative attributes include response time and throughput to ensure a seamless user experience.
 
 \subsection{Safety Requirements}
-% The requirements concerned with possible loss, damage, or harm from using the product.
+Ensure the software mitigates possible harm, loss, or damage during use.
 
 \subsection{Security Requirements}
-% The requirements to protect the software from unintended or unauthorized access.
+Implement measures to protect against unauthorized access and ensure data security.
 
 \subsection{Software Quality Attributes}
-% Additional quality characteristics that the product must have.
+Additional quality characteristics include maintainability, scalability, and usability.
 
 % Updation section
 \newpage
 \section{Updation}
 \subsection{Software Update Requirements}
-% The requirements for software updates, including procedures and frequency.
+Define procedures and frequency for software updates.
 
 \subsection{Data Migration and Updates}
-% The requirements for data migration, including strategies and timing.
+Specify requirements for data migration, including strategies and timing.
 
 \subsection{Document Update Process}
-% The process for updating this SRS document, including version control and update frequency.
+Detail the process for updating this SRS document, including version control and update frequency.
+
+% References section
+\newpage
+\begin{thebibliography}{9}
+    \bibitem{mongodb-doc}
+    MongoDB Documentation,
+    \url{https://docs.mongodb.com/}
+
+    \bibitem{express-doc}
+    Express.js Documentation,
+    \url{https://expressjs.com/}
+
+    \bibitem{react-doc}
+    React.js Documentation,
+    \url{https://reactjs.org/}
+
+    \bibitem{node-doc}
+    Node.js Documentation,
+    \url{https://nodejs.org/en/docs/}
+\end{thebibliography}
 
 \end{document}
